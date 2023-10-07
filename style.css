@@ -1,0 +1,173 @@
+@font-face {
+  font-family: poppins;
+  src: url(assets/font/poppins.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+a{
+  text-decoration: none;
+  color: #909193;
+  font-weight: 600;
+  font-size: 14;
+}
+a:hover{
+  color: #223344;
+}
+li{
+  text-decoration: none;
+  list-style: none;
+}
+body{
+ 
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+  padding: 20px;
+}
+.dark {
+  background:#111729;
+  color:  #F2F9FE;
+}
+.light{
+  background: #F2F9FE;
+  color: #111729;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  gap:40px;
+}
+
+
+main{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_hero{
+  width: 50%;
+}
+
+.image_hero > img{
+  width: 100%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subtitle{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.toogle_button{
+  width: 50px;
+  height: 25px;
+  border-radius: 15px;  
+  border: none;
+  border: 2px solid #111729;
+  position:relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #111729;
+}
+#slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff; /* Color del interruptor cuando está en la posición "Off" */
+  border-radius: 25px;
+  transition: left 0.3s ease-in-out; /* Transición para el desplazamiento del slider */
+}
+
+#imageDark, #imageLigth {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#imageDark {
+  left: 0;
+  display:none ;
+
+}
+
+#imageLigth {
+  right: 0;
+  display: block;
+}
+
+.dark_bg{
+background-color: #111729;
+}
+
+.light_bg{
+  background-color:#fff ;
+}
+
+.info > h1 {
+  font-size: 32px;
+  font-weight: 800;
+  width: 20ch;
+}
+
+.subheader {
+  color: #223344;
+  width: 40ch;
+}
+.actions{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.btn{
+  background: #2A4DD0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.link {
+  color: #2A4DD0;
+  text-decoration: underline;
+}
+.conditions{
+  display: flex;
+  gap: 20px;
+}
+
+.con_item{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.con_item > p {
+  color: #223344;
+  font-size: 14px;
+}
+
+

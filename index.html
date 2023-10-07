@@ -6,22 +6,29 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-<body>
+<body class="light">
   <header>
     <span class="logo">
       <img src="assets/alarado-icon-homepage.svg" alt="alarado logo">
     </span>
     <nav>
-      <ul>
-        <li><a href="">Abaut us</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Resource</a></li>
-        <li><a href="">Contact</a></li>
+      <ul class="nav">
+        <li><a class="nav_link" href="">Abaut us</a></li>
+        <li><a class="nav_link" href="">Product</a></li>
+        <li><a class="nav_link" href="">Resource</a></li>
+        <li><a class="nav_link" href="">Contact</a></li>
       </ul>
     </nav>
 
     <div class="toogle">
-      <button class="toogle_button"></button>
+      <button type="button" id="toggleButton" class="toogle_button dark_bg" style="background-color: rgb(17, 23, 41);">
+        <img src="assets/Moon_w.svg" width="50%" height="60%"  alt="dark">
+        <div id="slider" class="light_bg" style="left: 50%; background-color: rgb(255, 255, 255); ">
+          <img src="assets/Moon_w.svg" alt="dark" id="imageDark">
+          <img src="assets/Sun_fill.svg" alt="ligth" id="imageLigth">
+        </div>
+        <img src="assets/Sun_fill.svg" width="50%" height="60%" alt="ligth">
+      </button>
     </div>
   </header>
   <main>
@@ -32,10 +39,10 @@
       <h1>
         Actions for Accessibility in Design
       </h1>
-    <p>The fastest way to build and deploy websites with resusable components.</p>
+    <p class="subheader">The fastest way to build and deploy websites with resusable components.</p>
     <div class="actions">
       <a class="btn" href="">Get Started</a>
-      <a class="link" href="">Get Started</a>
+      <a class="link" href="">Get live demo</a>
     </div>
     <div class="conditions">
       <span class="con_item">
