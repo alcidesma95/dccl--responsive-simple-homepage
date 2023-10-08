@@ -8,19 +8,17 @@
 </head>
 <body class="light">
   <header>
-    <span class="logo">
-      <img src="assets/alarado-icon-homepage.svg" alt="alarado logo">
-    </span>
-    <nav>
-      <ul class="nav">
+    <div class="logo">
+    </div>
+    <button  id="open-menu" class="open-button"></button>
+    <nav id="menu" class="hidden">
+      <button id="close-menu" class="close-button"></button>
+      <ul class="nav-group ">
         <li><a class="nav_link" href="">Abaut us</a></li>
         <li><a class="nav_link" href="">Product</a></li>
         <li><a class="nav_link" href="">Resource</a></li>
         <li><a class="nav_link" href="">Contact</a></li>
       </ul>
-    </nav>
-
-    <div class="toogle">
       <button type="button" id="toggleButton" class="toogle_button dark_bg" style="background-color: rgb(17, 23, 41);">
         <img src="assets/Moon_w.svg" width="50%" height="60%"  alt="dark">
         <div id="slider" class="light_bg" style="left: 50%; background-color: rgb(255, 255, 255); ">
@@ -29,7 +27,8 @@
         </div>
         <img src="assets/Sun_fill.svg" width="50%" height="60%" alt="ligth">
       </button>
-    </div>
+    </nav>
+
   </header>
   <main>
     <section class="info">
